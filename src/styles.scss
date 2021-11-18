@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+
+@import "./assets/styles/colors.scss";
+@import "./assets/styles/fonts.scss";
+@import "./assets/styles/primeng-config.scss";
+@import "./assets/styles/mixins.scss";
+
+//Libraries
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/saga-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
