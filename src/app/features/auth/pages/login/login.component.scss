@@ -1,9 +1,19 @@
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #ff6b34, #ff6b34 20%, #fffbfb 65%, #ffffff 75%);
+}
 .content_wrapper {
   max-width: 1440px;
   display: flex;
   align-items: flex-start;
   height: 100vh;
+  max-height: 1024px;
   margin: 0px auto;
+  box-shadow: 0px 15px 20px rgb(0 0 0 / 30%);
 }
 .login_left,
 .login_right {
@@ -13,10 +23,11 @@
   position: relative;
 }
 .login_left {
-  padding: 35px 85px;
+  padding: 35px 130px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
 }
 .login_right img {
   width: 100%;
