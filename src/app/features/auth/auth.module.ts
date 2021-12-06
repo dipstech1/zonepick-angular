@@ -6,6 +6,7 @@ import { AuthShellComponent } from './auth-shell/auth-shell.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ButtonModule } from 'src/app/shared/button/button.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { ButtonModule } from 'src/app/shared/button/button.module';
   imports: [
     CommonModule,
     AuthRoutingModule,
-    ButtonModule
+    ButtonModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AuthModule { }

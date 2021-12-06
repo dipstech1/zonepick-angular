@@ -3,11 +3,18 @@
         <div class="login_left">
             <h2>Logo</h2>
             <div class="login_left_inner">
-                <form class="login_form" action="">
+                <form class="login_form" [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
                     <h5>Nice to see you again!</h5>
                     <h6>Welcome Back!</h6>
-                    <input type="text" name="" id="" placeholder="Email ID or Phone Number">
-                    <input type="password" placeholder="Password">
+                    <input type="text" formControlName="email" name="" id="" placeholder="Email ID or Phone Number">
+                    <div *ngIf="getControl.email.touched && getControl.email?.invalid" class="text-danger">
+                        <div *ngIf="getControl.email.errors?.required">Email is required.</div>
+                        <div *ngIf="getControl.email.errors?.email">Email seems invalid.</div>
+                    </div>
+                    <input type="password" placeholder="Password" formControlName="password">
+                    <div *ngIf="getControl.password?.touched && getControl.password?.invalid" class="text-danger">
+                        <div *ngIf="getControl.password.errors?.required">password is required.</div>
+                    </div>
                     <button class="custom_btn">Login</button>
                 </form>
                 <div class="other_option">
