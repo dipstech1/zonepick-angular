@@ -94,8 +94,8 @@
 }
 .text-danger{
   position: absolute;
-  right: 30px;
-  margin-top: -40px;
+  right: 0px;
+  bottom: 20px;
 }
 .custom_btn {
   background: #ff6b34;
@@ -240,7 +240,7 @@
   .other_option h6 span{
     background-color: transparent;
   }
-  .text-danger{
-    right: 165px;
-  }
+  // .text-danger{
+  //   right: 165px;
+  // }
 }

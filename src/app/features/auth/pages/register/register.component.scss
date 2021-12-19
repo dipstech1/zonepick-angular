@@ -82,6 +82,22 @@
 .login_form select:focus-visible {
   outline: none;
 }
+.text-danger{
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .custom_btn {
   background: #ff6b34;
   border-radius: 39px;
@@ -223,4 +239,55 @@ input:checked + .slider:before {
 }
 .login a{
     color: #ff6b34;
+}
+@media (max-width: 1047px) {
+  .wrapper{
+    height: 100%;
+  }
+  .wrapper h2{
+    z-index: 1;
+  }
+  .form_inner {
+    width: 100%;
+  }
+  .login_form input {
+    width: 100%; 
+  }
+  .content_wrapper{
+    max-height: max-content;
+    box-shadow: none;
+    padding: 40px 200px;
+    padding-top: 100px;
+  }
+}
+@media (max-height: 781px) {
+  .wrapper{
+    height: 100%;
+  }
+  .wrapper h2{
+    z-index: 1;
+  }
+  .form_inner {
+    width: 100%;
+  }
+  .login_form input {
+    width: 100%; 
+  }
+  .content_wrapper{
+    max-height: max-content;
+    box-shadow: none;
+    padding-top: 100px;
+  }
+}
+@media (max-width:920px) {
+  .content_wrapper{
+    padding: 40px 150px;
+    padding-top: 100px;
+  }
+}
+@media (max-width:830px) {
+  .content_wrapper{
+    padding: 40px 50px;
+    padding-top: 100px;
+  }
 }
